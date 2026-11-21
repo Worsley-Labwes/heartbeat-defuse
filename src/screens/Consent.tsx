@@ -15,8 +15,8 @@ export default function Consent({ vitals, onReady }: { vitals: Vitals; onReady: 
         <h2>What the camera reads, and why</h2>
         <ul>
           <li><b>Pulse and breathing rate</b>, estimated from tiny colour and motion changes on your face and chest. They drive the game.</li>
-          <li>The app <b>never saves or uploads</b> video, images, or readings. Numbers live in memory and vanish when you close it.</li>
-          <li>The camera feed is processed by the SmartSpectra SDK, which <b>contacts Presage's servers</b> to measure. We switch its optional telemetry off.</li>
+          <li>This app <b>never saves</b> video, images, or readings, and has no server of its own. Numbers live in memory and vanish when you close it.</li>
+          <li>The camera feed is handled by the SmartSpectra SDK, which <b>contacts Presage's servers</b> (to register this device and download its measurement model). We switch its optional telemetry off. See Presage's privacy page for exactly what the SDK sends.</li>
           <li>This is a game. It is <b>not a medical device</b> and says nothing about your health.</li>
         </ul>
         <label className="check">

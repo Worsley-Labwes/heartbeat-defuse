@@ -51,7 +51,7 @@ export default function Stillpoint({ vitals, onExit }: { vitals: Vitals; onExit:
       {!running && (
         <p className="coach">
           {done
-            ? `Your breathing averaged ${view.avg?.toFixed(1) ?? '--'} per minute over the scored part. Slow, even breathing is a common relaxation exercise. This is a game, not a health measure.`
+            ? `Your breathing averaged ${view.avg?.toFixed(1) ?? '--'} per minute over the scored part. This is a game, not a health measure or treatment.`
             : 'Follow the circle. Breathing readings lag by many seconds, so scoring starts after the first 20 seconds.'}
         </p>
       )}

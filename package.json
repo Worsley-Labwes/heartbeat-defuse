@@ -12,6 +12,7 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@smartspectra/node-sdk": "^3.5.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"
   },
