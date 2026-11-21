@@ -1,0 +1,30 @@
+{
+  "name": "pulse-defuse",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Defuse a bomb with your own calm. A SmartSpectra SDK game for the DEV x Presage challenge.",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "web": "vite",
+    "dev": "concurrently -k \"vite --port 5173 --strictPort\" \"wait-on tcp:5173 && cross-env PD_DEV=1 electron .\"",
+    "build": "tsc --noEmit && vite build",
+    "start": "npm run build && electron .",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "concurrently": "^10.0.7",
+    "cross-env": "^10.1.0",
+    "electron": "^45.2.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7",
+    "vitest": "^5.1.0",
+    "wait-on": "^9.5.1"
+  }
+}
